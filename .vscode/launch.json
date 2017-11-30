@@ -7,7 +7,8 @@
             "request": "launch",
             "stopOnEntry": false,
             "pythonPath": "/usr/bin/python3.6",
-            "program": "${workspaceRoot}/basics1.py",
+            
+            "program": "${workspaceRoot}/library_usage.py",
             "cwd": "${workspaceRoot}",
             "env": {},
             "envFile": "${workspaceRoot}/.env",
