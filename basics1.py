@@ -181,3 +181,37 @@ def check_default_parameters():
 
 
 check_default_parameters()
+
+
+class MyClass:
+    """A simple example class"""
+    i = 12345
+
+    def some_method(self):
+        """just a test method"""
+        return 'hello world'
+
+
+# Formatierung mit printfunktion
+def check_print_formatting():
+    """Testet unterschiedliche formatierungen
+    """
+
+    my_object = MyClass()
+    my_decimal_number = 12
+    my_floating_number = 34.123456789
+    my_tuple_object = (123, 222, 123, "333")
+
+    my_string = "hallo das ist ein text"
+    print("str representation if decimal \t", my_decimal_number)
+    print("str representation if my_string \t", str(my_string))
+    print("repr representation of my_object \t", repr(my_object))
+    print("repr representation2 of my_object \t", my_object.__repr__)
+    print("str representation of my_object \t", str(my_object))
+    print("get documentation of my_object \t", my_object.__doc__)
+    print("get documentation of my_tuple_object \t", my_tuple_object)
+    print('The story of {0}, {1}, and {other}.'.format('Bill', 'Manfred', other= 'Georg'))
+    print('My floating point number is  {0:.3f}.'.format(my_floating_number))
+    print('My floating point number is  {0:.6f}.'.format(my_floating_number))
+
+check_print_formatting()
